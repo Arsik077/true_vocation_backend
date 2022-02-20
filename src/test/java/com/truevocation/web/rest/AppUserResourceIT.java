@@ -6,10 +6,11 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 import com.truevocation.IntegrationTest;
-import com.truevocation.domain.AppUser;
-import com.truevocation.repository.AppUserRepository;
-import com.truevocation.service.dto.AppUserDTO;
-import com.truevocation.service.mapper.AppUserMapper;
+import com.truevocation.main.app_user.controller.AppUserResource;
+import com.truevocation.main.app_user.entity.AppUser;
+import com.truevocation.main.app_user.repository.AppUserRepository;
+import com.truevocation.main.app_user.dto.AppUserDTO;
+import com.truevocation.main.app_user.mapper.AppUserMapper;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.List;

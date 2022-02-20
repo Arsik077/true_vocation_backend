@@ -6,10 +6,11 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 import com.truevocation.IntegrationTest;
-import com.truevocation.domain.City;
-import com.truevocation.repository.CityRepository;
-import com.truevocation.service.dto.CityDTO;
-import com.truevocation.service.mapper.CityMapper;
+import com.truevocation.main.city.controller.CityResource;
+import com.truevocation.main.city.entity.City;
+import com.truevocation.main.city.repository.CityRepository;
+import com.truevocation.main.city.dto.CityDTO;
+import com.truevocation.main.city.mapper.CityMapper;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicLong;

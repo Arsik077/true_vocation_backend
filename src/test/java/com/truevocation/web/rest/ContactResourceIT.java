@@ -6,10 +6,11 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 import com.truevocation.IntegrationTest;
-import com.truevocation.domain.Contact;
-import com.truevocation.repository.ContactRepository;
-import com.truevocation.service.dto.ContactDTO;
-import com.truevocation.service.mapper.ContactMapper;
+import com.truevocation.main.contact.controller.ContactResource;
+import com.truevocation.main.contact.entity.Contact;
+import com.truevocation.main.contact.repository.ContactRepository;
+import com.truevocation.main.contact.dto.ContactDTO;
+import com.truevocation.main.contact.mapper.ContactMapper;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicLong;

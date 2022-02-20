@@ -6,10 +6,11 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 import com.truevocation.IntegrationTest;
-import com.truevocation.domain.Comments;
-import com.truevocation.repository.CommentsRepository;
-import com.truevocation.service.dto.CommentsDTO;
-import com.truevocation.service.mapper.CommentsMapper;
+import com.truevocation.main.comments.controller.CommentsResource;
+import com.truevocation.main.comments.entity.Comments;
+import com.truevocation.main.comments.repository.CommentsRepository;
+import com.truevocation.main.comments.dto.CommentsDTO;
+import com.truevocation.main.comments.mapper.CommentsMapper;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.List;

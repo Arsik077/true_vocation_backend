@@ -6,10 +6,11 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 import com.truevocation.IntegrationTest;
-import com.truevocation.domain.Achievement;
-import com.truevocation.repository.AchievementRepository;
-import com.truevocation.service.dto.AchievementDTO;
-import com.truevocation.service.mapper.AchievementMapper;
+import com.truevocation.main.achievement.controller.AchievementResource;
+import com.truevocation.main.achievement.entity.Achievement;
+import com.truevocation.main.achievement.repository.AchievementRepository;
+import com.truevocation.main.achievement.dto.AchievementDTO;
+import com.truevocation.main.achievement.mapper.AchievementMapper;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.List;

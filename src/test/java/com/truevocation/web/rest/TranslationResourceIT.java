@@ -6,10 +6,11 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 import com.truevocation.IntegrationTest;
-import com.truevocation.domain.Translation;
-import com.truevocation.repository.TranslationRepository;
-import com.truevocation.service.dto.TranslationDTO;
-import com.truevocation.service.mapper.TranslationMapper;
+import com.truevocation.main.translation.controller.TranslationResource;
+import com.truevocation.main.translation.entity.Translation;
+import com.truevocation.main.translation.repository.TranslationRepository;
+import com.truevocation.main.translation.dto.TranslationDTO;
+import com.truevocation.main.translation.mapper.TranslationMapper;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicLong;

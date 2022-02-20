@@ -2,6 +2,7 @@ package com.truevocation.domain;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import com.truevocation.main.translation.entity.Translation;
 import com.truevocation.web.rest.TestUtil;
 import org.junit.jupiter.api.Test;
 

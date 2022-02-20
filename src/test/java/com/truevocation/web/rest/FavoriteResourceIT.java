@@ -6,10 +6,11 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 import com.truevocation.IntegrationTest;
-import com.truevocation.domain.Favorite;
-import com.truevocation.repository.FavoriteRepository;
-import com.truevocation.service.dto.FavoriteDTO;
-import com.truevocation.service.mapper.FavoriteMapper;
+import com.truevocation.main.favorite.controller.FavoriteResource;
+import com.truevocation.main.favorite.entity.Favorite;
+import com.truevocation.main.favorite.repository.FavoriteRepository;
+import com.truevocation.main.favorite.dto.FavoriteDTO;
+import com.truevocation.main.favorite.mapper.FavoriteMapper;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicLong;

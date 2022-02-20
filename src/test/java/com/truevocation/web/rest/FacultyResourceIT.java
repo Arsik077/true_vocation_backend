@@ -6,10 +6,11 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 import com.truevocation.IntegrationTest;
-import com.truevocation.domain.Faculty;
-import com.truevocation.repository.FacultyRepository;
-import com.truevocation.service.dto.FacultyDTO;
-import com.truevocation.service.mapper.FacultyMapper;
+import com.truevocation.main.faculty.controller.FacultyResource;
+import com.truevocation.main.faculty.entity.Faculty;
+import com.truevocation.main.faculty.repository.FacultyRepository;
+import com.truevocation.main.faculty.dto.FacultyDTO;
+import com.truevocation.main.faculty.mapper.FacultyMapper;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicLong;

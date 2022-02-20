@@ -7,11 +7,12 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 import com.truevocation.IntegrationTest;
-import com.truevocation.domain.Portfolio;
-import com.truevocation.repository.PortfolioRepository;
-import com.truevocation.service.PortfolioService;
-import com.truevocation.service.dto.PortfolioDTO;
-import com.truevocation.service.mapper.PortfolioMapper;
+import com.truevocation.main.portfolio.controller.PortfolioResource;
+import com.truevocation.main.portfolio.entity.Portfolio;
+import com.truevocation.main.portfolio.repository.PortfolioRepository;
+import com.truevocation.main.portfolio.service.PortfolioService;
+import com.truevocation.main.portfolio.dto.PortfolioDTO;
+import com.truevocation.main.portfolio.mapper.PortfolioMapper;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -25,7 +26,6 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.data.domain.PageImpl;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;

@@ -2,6 +2,7 @@ package com.truevocation.service.dto;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import com.truevocation.main.translation.dto.TranslationDTO;
 import com.truevocation.web.rest.TestUtil;
 import org.junit.jupiter.api.Test;
 

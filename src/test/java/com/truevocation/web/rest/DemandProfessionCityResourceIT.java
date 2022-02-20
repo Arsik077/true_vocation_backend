@@ -6,10 +6,11 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 import com.truevocation.IntegrationTest;
-import com.truevocation.domain.DemandProfessionCity;
-import com.truevocation.repository.DemandProfessionCityRepository;
-import com.truevocation.service.dto.DemandProfessionCityDTO;
-import com.truevocation.service.mapper.DemandProfessionCityMapper;
+import com.truevocation.main.demand_profession_city.controller.DemandProfessionCityResource;
+import com.truevocation.main.demand_profession_city.entity.DemandProfessionCity;
+import com.truevocation.main.demand_profession_city.repository.DemandProfessionCityRepository;
+import com.truevocation.main.demand_profession_city.dto.DemandProfessionCityDTO;
+import com.truevocation.main.demand_profession_city.mapper.DemandProfessionCityMapper;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicLong;

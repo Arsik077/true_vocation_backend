@@ -2,8 +2,8 @@ package com.truevocation.service.mapper;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import com.truevocation.main.answer_user.mapper.AnswerUserMapper;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 
 class AnswerUserMapperTest {
 

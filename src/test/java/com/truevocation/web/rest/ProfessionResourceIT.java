@@ -7,11 +7,12 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 import com.truevocation.IntegrationTest;
-import com.truevocation.domain.Profession;
-import com.truevocation.repository.ProfessionRepository;
-import com.truevocation.service.ProfessionService;
-import com.truevocation.service.dto.ProfessionDTO;
-import com.truevocation.service.mapper.ProfessionMapper;
+import com.truevocation.main.profession.controller.ProfessionResource;
+import com.truevocation.main.profession.entity.Profession;
+import com.truevocation.main.profession.repository.ProfessionRepository;
+import com.truevocation.main.profession.service.ProfessionService;
+import com.truevocation.main.profession.dto.ProfessionDTO;
+import com.truevocation.main.profession.mapper.ProfessionMapper;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -25,7 +26,6 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.data.domain.PageImpl;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;

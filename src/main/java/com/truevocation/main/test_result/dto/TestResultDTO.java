@@ -1,0 +1,87 @@
+package com.truevocation.main.test_result.dto;
+
+import com.truevocation.main.app_user.dto.AppUserDTO;
+import com.truevocation.main.prof_test.dto.ProfTestDTO;
+import com.truevocation.main.recommendation.dto.RecommendationDTO;
+import com.truevocation.main.test_result.entity.TestResult;
+
+import java.io.Serializable;
+import java.util.Objects;
+
+/**
+ * A DTO for the {@link TestResult} entity.
+ */
+public class TestResultDTO implements Serializable {
+
+    private Long id;
+
+    private AppUserDTO appUser;
+
+    private RecommendationDTO recommendation;
+
+    private ProfTestDTO profTest;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public AppUserDTO getAppUser() {
+        return appUser;
+    }
+
+    public void setAppUser(AppUserDTO appUser) {
+        this.appUser = appUser;
+    }
+
+    public RecommendationDTO getRecommendation() {
+        return recommendation;
+    }
+
+    public void setRecommendation(RecommendationDTO recommendation) {
+        this.recommendation = recommendation;
+    }
+
+    public ProfTestDTO getProfTest() {
+        return profTest;
+    }
+
+    public void setProfTest(ProfTestDTO profTest) {
+        this.profTest = profTest;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof TestResultDTO)) {
+            return false;
+        }
+
+        TestResultDTO testResultDTO = (TestResultDTO) o;
+        if (this.id == null) {
+            return false;
+        }
+        return Objects.equals(this.id, testResultDTO.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(this.id);
+    }
+
+    // prettier-ignore
+    @Override
+    public String toString() {
+        return "TestResultDTO{" +
+            "id=" + getId() +
+            ", appUser=" + getAppUser() +
+            ", recommendation=" + getRecommendation() +
+            ", profTest=" + getProfTest() +
+            "}";
+    }
+}

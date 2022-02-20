@@ -6,10 +6,11 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 import com.truevocation.IntegrationTest;
-import com.truevocation.domain.Likes;
-import com.truevocation.repository.LikesRepository;
-import com.truevocation.service.dto.LikesDTO;
-import com.truevocation.service.mapper.LikesMapper;
+import com.truevocation.main.likes.controller.LikesResource;
+import com.truevocation.main.likes.entity.Likes;
+import com.truevocation.main.likes.repository.LikesRepository;
+import com.truevocation.main.likes.dto.LikesDTO;
+import com.truevocation.main.likes.mapper.LikesMapper;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicLong;

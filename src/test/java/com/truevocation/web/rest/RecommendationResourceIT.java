@@ -6,10 +6,11 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 import com.truevocation.IntegrationTest;
-import com.truevocation.domain.Recommendation;
-import com.truevocation.repository.RecommendationRepository;
-import com.truevocation.service.dto.RecommendationDTO;
-import com.truevocation.service.mapper.RecommendationMapper;
+import com.truevocation.main.recommendation.controller.RecommendationResource;
+import com.truevocation.main.recommendation.entity.Recommendation;
+import com.truevocation.main.recommendation.repository.RecommendationRepository;
+import com.truevocation.main.recommendation.dto.RecommendationDTO;
+import com.truevocation.main.recommendation.mapper.RecommendationMapper;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicLong;

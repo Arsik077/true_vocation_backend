@@ -7,11 +7,12 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 import com.truevocation.IntegrationTest;
-import com.truevocation.domain.Question;
-import com.truevocation.repository.QuestionRepository;
-import com.truevocation.service.QuestionService;
-import com.truevocation.service.dto.QuestionDTO;
-import com.truevocation.service.mapper.QuestionMapper;
+import com.truevocation.main.question.controller.QuestionResource;
+import com.truevocation.main.question.entity.Question;
+import com.truevocation.main.question.repository.QuestionRepository;
+import com.truevocation.main.question.service.QuestionService;
+import com.truevocation.main.question.dto.QuestionDTO;
+import com.truevocation.main.question.mapper.QuestionMapper;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -25,7 +26,6 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.data.domain.PageImpl;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
